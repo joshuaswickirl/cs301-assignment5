@@ -3,6 +3,7 @@
 #
 
 import pytest
+from sorting_lists import insertion_sort, bubble_sort, selection_sort, merge_sort
 
 def test_insertion_sort_1():
     pass
