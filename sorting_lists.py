@@ -18,7 +18,8 @@ def bubble_sort(ulist):
                 temp = ulist[i]
                 ulist[i] = ulist[i+1]
                 ulist[i+1] = temp
-
+    return ulist
+    
 
 def selection_sort(ulist):
     """
