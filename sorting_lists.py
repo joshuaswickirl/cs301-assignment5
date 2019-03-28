@@ -15,7 +15,7 @@ def bubble_sort(ulist):
 
 def selection_sort(ulist):
    ***
-   Selections Sort 
+   Selection-Sort 
    ***
    for slot in range(len(ulist)-1,0,-1):
        posOfMax = 0
