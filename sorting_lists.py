@@ -11,6 +11,7 @@ def insertion_sort(ulist):
 def bubble_sort(ulist):
     """
     returns sorted list using bubble sort method
+    runs at O(n^2)
     """
     for passnum in range(len(ulist)-1,0,-1): #gives a value of position
         for i in range(passnum):#it searches for the position equal to i
