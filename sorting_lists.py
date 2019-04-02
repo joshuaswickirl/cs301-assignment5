@@ -60,6 +60,7 @@ def merge_sorted_lists(list1,list2=[]):
     return combined_list
 
 #A Function to merge the left and right side of the list
+#Run Time for my function should be O(nlogn)
 def Edgar_Merge_Lists(l, r, list1):
   i = 0
   j = 0
