@@ -15,7 +15,10 @@ def bubble_sort(ulist):
 
 def selection_sort(ulist):
     """
-    Selection-Sort 
+    Selection-Sort: A function used to sort a list by initializing the largest number in the first slot 
+    until it works its way down the entire list.
+    
+    Run time: My prediction for the Big-O runtime is O(n^2) because of the for-loop and nested for-loop that calculates "n."
     """
     for slot in range(len(ulist)-1,0,-1):
         posOfMax = 0
