@@ -117,8 +117,8 @@ for i in list1:
   print (i, end = " ")
 
 def merge_sort(ulist):#Devin
-    print("unsorted list")
-    print(ulist)
+    #print("unsorted list")
+    #print(ulist)
     if len(ulist)>1:
         mid = len(ulist)//2
         half1 = ulist[:mid]
