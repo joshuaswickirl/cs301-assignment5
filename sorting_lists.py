@@ -116,4 +116,35 @@ Edgar_Merge_Sort(list1)
 for i in list1:
   print (i, end = " ")
 
+def merge_sort(ulist):#Devin
+    print("unsorted list")
+    print(ulist)
+    if len(ulist)>1:
+        mid = len(ulist)//2
+        half1 = ulist[:mid]
+        half2 = ulist[mid:]
+        merge_sort(half1)
+        merge_sort(half2)
+        i = 0
+        j = 0
+        k = 0
+
+        while i< len (half1) and j < len(half2):
+            if half1[i] < half2[j]:
+                ulist[k]=half1[i]
+                i = i+1
+            else:
+                ulist[k] = half2[j]
+                j = j+1
+            k = k+1
+
+        while i < len(half1):
+            ulist[k] = half1[i]
+            i = i+1
+            k = k+1
+        while j < len(half2):
+            ulist[k] = half2[j]
+            j = j+1
+            k = k+1
+
 
