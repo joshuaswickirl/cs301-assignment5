@@ -20,6 +20,16 @@ def selection_sort(ulist):
     pass
 
 
+#
+#   Merge Sort
+#   
+#   Merge sort runs in nlog(n) time. This is because recursively
+#   splitting the unsorted list into two takes log(n) time since
+#   the list is split in half each iteration. Merging the lists
+#   then runs in linear time, for a combined run time on the order
+#   of nlog(n).
+#
+
 def merge_sort(ulist):
     """
     Recurisvely splits list into individual items
