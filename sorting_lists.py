@@ -2,6 +2,7 @@
 #   Sorting list functions
 #
 
+
 #
 #   Insertion Sort
 #
@@ -33,6 +34,7 @@ def insertion_sort(ulist):
             else:
                 index += 1
     return sorted_list
+
 
 #
 #   Bubble Sort

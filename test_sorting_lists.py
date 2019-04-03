@@ -2,7 +2,6 @@
 #   Tests for sorting list functions
 #
 
-import pytest
 from sorting_lists import insertion_sort, bubble_sort, selection_sort, merge_sort, merge_sorted_lists
 
 def test_insertion_sort_1():
