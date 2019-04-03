@@ -40,21 +40,21 @@ def merge_sorted_lists(list1,list2=[]):
     sorted list.
     """
     combined_list = []
+    index_list1 = 0
+    index_list2 = 0
     items_left = True
     while items_left:
-        len_list1 = len(list1)
-        len_list2 = len(list2)
-        if len_list1 == 0 and len_list2 == 0:
+        if index_list1 >= len(list1):
+            combined_list = combined_list + list2[index_list2:]
             items_left = False
-        elif len_list1 == 0 and len_list2 > 0:
-            combined_list = combined_list + list2
+        elif index_list2 >= len(list2):
+            combined_list = combined_list + list1[index_list1:]
             items_left = False
-        elif len_list2 == 0 and len_list1 > 0:
-            combined_list = combined_list + list1
-            items_left = False
-        elif list1[0] >= list2[0]:
-            combined_list.append(list2.pop(0))
-        else:
-            combined_list.append(list1.pop(0))
+        elif list2[index_list2] <= list1[index_list1]:
+            combined_list.append(list2[index_list2])
+            index_list2 += 1
+        elif list1[index_list1] <= list2[index_list2]:
+            combined_list.append(list1[index_list1])
+            index_list1 += 1
 
     return combined_list
