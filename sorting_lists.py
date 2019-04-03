@@ -52,7 +52,6 @@ def bubble_sort(ulist):
     runs at O(n^2)
     """
     for passnum in range(len(ulist)-1,0,-1): #gives a value of position
-        print(ulist)
         for i in range(passnum):#it searches for the position equal to i
             if ulist[i]>ulist[i+1]: #if the value of position i is larger than
                 temp = ulist[i]
