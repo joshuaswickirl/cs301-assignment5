@@ -19,13 +19,16 @@ def test_insertion_sort_3():
 
 
 def test_bubble_sort_1():
-    pass
+    ulist = [3,2,1]
+    assert bubble_sort(ulist) == [1,2,3]
 
 def test_bubble_sort_2():
-    pass
+    ulist = [1,4,5,9,2,15,0]
+    assert bubble_sort(ulist) == [0,1,2,4,5,9,15]
 
 def test_bubble_sort_3():
-    pass
+    ulist = [21,9,-1,4]
+    assert bubble_sort(ulist) == [-1,4,9,21]
 
 
 def test_selection_sort_1():
