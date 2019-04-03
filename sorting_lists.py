@@ -2,6 +2,14 @@
 #   Sorting list functions
 #
 
+#
+#   Insertion Sort
+#
+#   Insertion sort runs in n**2 time. This is because for each item
+#   in the unsorted list, the algorithm iterates through each
+#   item in the sorted list. This is a nested loop.
+#
+
 def insertion_sort(ulist):
     """
     Returns sorted numerical list using an insertion sort algorithm
