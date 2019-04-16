@@ -51,12 +51,15 @@ def bubble_sort(ulist):
     Returns sorted list using bubble sort method
     runs at O(n^2)
     """
-    for passnum in range(len(ulist)-1,0,-1): #gives a value of position
-        for i in range(passnum):#it searches for the position equal to i
-            if ulist[i]>ulist[i+1]: #if the value of position i is larger than
+    list_sorted = False
+    while not list_sorted:
+        list_sorted = True
+        for i in range(len(ulist)-1):
+            if ulist[i] > ulist[i+1]:
                 temp = ulist[i]
                 ulist[i] = ulist[i+1]
                 ulist[i+1] = temp
+                list_sorted = False
     return ulist
  
 
