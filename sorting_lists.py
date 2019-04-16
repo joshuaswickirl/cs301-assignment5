@@ -52,14 +52,16 @@ def bubble_sort(ulist):
     runs at O(n^2)
     """
     list_sorted = False
+    unsorted_items = len(ulist)-1
     while not list_sorted:
         list_sorted = True
-        for i in range(len(ulist)-1):
+        for i in range(unsorted_items):
             if ulist[i] > ulist[i+1]:
                 temp = ulist[i]
                 ulist[i] = ulist[i+1]
                 ulist[i+1] = temp
                 list_sorted = False
+        unsorted_items -= 1
     return ulist
  
 
