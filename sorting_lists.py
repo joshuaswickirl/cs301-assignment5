@@ -82,18 +82,18 @@ def selection_sort(ulist):
     Run time: My prediction for the Big-O runtime is O(n^2) 
     because of the for-loop and nested for-loop that calculates "n."
     """
-    for slot in range(len(ulist)-1,0,-1):
-        posOfMax = 0
-        for location in range(1,slot+1):
-            if ulist[location]> ulist[posOfMax]:
-                posOfMax = location
-
-        sort = ulist[slot]
-        ulist[slot] = ulist[posOfMax]
-        ulist[posOfMax] = sort
+    for i in range(len(ulist)-1):
+        min_index = i
+        for j in range(i+1, len(ulist)):
+            if ulist[j] < ulist[min_index]:
+                min_index = j
+        if min_index != i:
+            temp = ulist[i]
+            ulist[i] = ulist[min_index]
+            ulist[min_index] = temp
     return ulist
 
-
+    
 #
 #   Merge Sort
 #   
